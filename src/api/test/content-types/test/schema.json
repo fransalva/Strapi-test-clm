@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tests",
+  "info": {
+    "singularName": "test",
+    "pluralName": "tests",
+    "displayName": "Test",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Pregunta": {
+      "type": "string"
+    },
+    "Correcta": {
+      "type": "integer"
+    },
+    "nivel": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::nivel.nivel",
+      "inversedBy": "tests"
+    },
+    "Respuesta1": {
+      "type": "string"
+    },
+    "Respuesta2": {
+      "type": "string"
+    },
+    "Respuesta3": {
+      "type": "string"
+    },
+    "Respuesta4": {
+      "type": "string"
+    }
+  }
+}
